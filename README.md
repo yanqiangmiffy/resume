@@ -1,2 +1,4 @@
 # resume
-`https://yanqiangmiffy.github.io/resume/`
+--------
+
+https://yanqiangmiffy.github.io/resume/
