@@ -1,183 +1,75 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <title>我的简历</title>
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
-    <script src="static/js/script.js"></script>
-</head>
+---
+layout: default
+---
 
-<body>
-    <div class="container" id="cv">
-        <div class="side">
-            <div class="me">
-                <div class="portrait"></div>
-                
-                <h1 id="username" contenteditable="true">闫强</h1>
-                <h4 id="persona-tag" contenteditable="true">Python / PHP/ 前端<br></h4>
-            </div>
-            <div class="profile info-unit">
-                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title" contenteditable="true">基本信息</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <ul class="info-list">
-                    <li>
-                        <label class="left-label" contenteditable="true">姓名</label><span class="label-value" contenteditable="true">闫强</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">学历</label><span class="label-value" contenteditable="true">本科</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">毕业院校</label><span class="label-value" contenteditable="true">浙江理工大学</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">毕业年份</label><span class="label-value" contenteditable="true">2017</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                </ul>
-            </div>
-            <div class="contact info-unit">
-                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title" contenteditable="true">联系方式</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <ul class="info-list">
-                    
-                    <li>
-                        <label class="left-label" contenteditable="true">邮箱</label><span class="label-value" contenteditable="true">yanqiangmiffy@gmail.com</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">个人主页</label><span class="label-value" contenteditable="true">http://www.jianshu.com/u/261e23a40f71</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">Github</label><span class="label-value" contenteditable="true">github.com/yanqiangmiffy</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                </ul>
-            </div>
-            <div class="skill info-unit">
-                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title" contenteditable="true">技能点</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <ul class="progress-list">
-                    <li>
-                        <label class="left-label" contenteditable="true">Python</label>
-                        <progress value="80" max="100"></progress>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">html/css</label>
-                        <progress value="70" max="100"></progress>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">Javascript</label>
-                        <progress value="60" max="100"></progress>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    
-                <li>
-                        <label class="left-label" contenteditable="true">PHP</label>
-                        <progress value="80" max="100"></progress>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li></ul>
-            </div>
-            <div class="stack info-unit">
-                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title" contenteditable="true">技术栈</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <ul class="stack-list">
-                    <li>
-                        <label class="left-label" contenteditable="true">前端</label><span class="label-value" contenteditable="true">jQuery、Angular.js、React.js、Vue.js</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    
-                    <li>
-                        <label class="left-label" contenteditable="true">后端</label><span class="label-value" contenteditable="true">Flask、Codeigniter、Laravel、Node.js、MongoDB、MySQL</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    
-                    <li>
-                        <label class="left-label" contenteditable="true">其它</label><span class="label-value" contenteditable="true">Qt界面程序设计</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    
-                </ul>
-            </div>
+<div id="ace-content" class="ace-container-shift">
+    <div class="ace-container">
+        <div id="ace-nav-wrap" class="hidden-sm hidden-xs">
+            <div class="ace-nav-cont">
+                <div id="ace-nav-scroll">
+                    <nav id="ace-nav" class="ace-nav">
+                        <ul class="clear-list">
+                            <li>
+                              <a href="index.html" data-tooltip="Home"><img class="avatar avatar-42" src="{{ '/styles/img/show-star.png' | prepend: site.baseurl }}" alt=""></a>
+                            </li>
+                            <li>
+                              <a href="#basic_info" data-tooltip="基本信息"><span class="ace-icon ace-icon-home"></span></a>
+                            </li>
+                            <li>
+                              <a href="#profetional" data-tooltip="职业技能"><span class="ace-icon ace-icon-experience"></span></a>
+                            </li>
 
-            <div class="code info-unit">
-                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title" contenteditable="true">个人微信</span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <div class="weixin">
-                    <img src="static/image/weixin.png" alt="">
+                            <li>
+                              <a href="#education" data-tooltip="教育经历"><span class="ace-icon ace-icon-portfolio"></span></a>
+                            </li>
+                            
+                            <li>
+                              <a href="#experience" data-tooltip="工作经历"><span class="ace-icon ace-icon-references"></span></a>
+                            </li>
+                            <li>
+                              <a href="#certification" data-tooltip="获得证书"><span class="ace-icon ace-icon-blog"></span></a>
+                            </li>
+                            <li>
+                              <a href="#personal_project" data-tooltip="个人作品"><span class="ace-icon ace-icon-snowflake-o"></span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
 
+                <div id="ace-nav-tools" class="hidden">
+                    <span class="ace-icon ace-icon-dots-three-horizontal"></span>
+
+                    <button id="ace-nav-arrow" class="clear-btn">
+                        <span class="ace-icon ace-icon-chevron-thin-down"></span>
+                    </button>
                 </div>
             </div>
-            
-        </div>
-        <div class="main">
-            <div class="education info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title" contenteditable="true">教育经历</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3 contenteditable="true">浙江理工大学 - 计算机科学与技术全英文（本科）2012-2017</h3>
-                        <p contenteditable="true">Thanks for my Alma Mater！<br></p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                </ul>
-            </div>
-            <div class="work info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title" contenteditable="true">工作经历</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3 contenteditable="true">完美世界-平台开发部－实习生（实习）</h3>
-                        <p contenteditable="true">1.使用python处理和分析游戏服务器的大量日志文件，保存到数据库<br>2.基于Laravel开发网站和echart做数据可视化分析<br></p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    
-                </ul>
-            </div>
-            <div class="project info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title" contenteditable="true">个人项目</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3 contenteditable="true">基于 Qt 5 的文本编辑器</h3>
-                        <p contenteditable="true">参考网络上的教程，使用Qt制作的文本编辑器，实现了编辑、复制、撤销、保存等功能<br>
-                        </p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <h3 contenteditable="true">基于OpenCV2.4.9的摄像头检测系统</h3>
-                        <p contenteditable="true">大三软件工程的课设，系统使用MFC设计界面，用户登录之后，可以使用OpenCV调用摄像头，点击拍照之后可以检测人脸<br></p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <h3 contenteditable="true">基于 struts2开发的医疗预约系统<br></h3>
-                        <p contenteditable="true">使用javaWeb的struts2开发的医院体检预约系统<br></p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <h3 contenteditable="true">基于 Laravel开发的丝绸文化创意平台<br></h3>
-                        <p contenteditable="true">这个是服装学院校职业规划大赛的作品，负责整个网站的后台开发和页面设计，主要技术用到Laravel、JQuery等</p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                <li>
-                        <h3 contenteditable="true">基于 Codeigniter的网络教学平台</h3>
-                        <p contenteditable="true">这是我的毕业设计，也是自己倾注最多的项目。平台主要是实现了学生、教师、管理员的登录注册。对于学生：可以进行在线观看视频，下载文件资料、添加选课、个人信息修改等；对于教师：可以进行发布课程、上传课程的文件资料等；对于管理员：可以进行全站的管理，编辑学生主页，管理课程、学生、教师、文件。<br>
-                        </p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li></ul>
-            </div>
-            <div class="trophy info-unit">
-                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title" contenteditable="true">奖项与证书</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3 contenteditable="true">小挑战杯三等奖——基于Web的3D打印平台<br></h3>
-                        <p contenteditable="true">2014年：负责网站的后台开发（PHP）和前端页面设计，主要用到JQuery、BootStrap等。</p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li> 
-                    <li>
-                        <h3 contenteditable="true">外语——四、六级、雅思证书<br></h3>
-                        <p contenteditable="true">喜欢看外语电影^_^</p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li> 
-                                         
-            <li>
-                        <h3 contenteditable="true">三届优秀学生三等奖学金、优秀团员等<br></h3>
-                        <p contenteditable="true">好好学习，天天向上</p>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li></ul></div>
-            <div class="aboutme info-unit right-paragraph">
-                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title" contenteditable="true">自我评价</span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <p contenteditable="true">热爱IT行业、待人真诚、乐观开朗、微笑拥抱每一天☺<br></p>
-            </div>
-        </div>
-    </div>
 
+            <!-- <div class="ace-nav-btm"></div> -->
+        </div><!-- .ace-nav-wrap -->
 
+        <div class="ace-paper-stock">
+            <main class="ace-paper clearfix">
+                <div class="ace-paper-cont clear-mrg">
+                    <!-- START: PAGE CONTENT -->
+                    <div class="padd-box clear-mrg">
 
-<div class="remodal-overlay remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-img remodal-is-initialized remodal-is-closed" data-remodal-id="portrait-modal" tabindex="-1">
-                    <h3 contenteditable="true">请输入图片URL地址：</h3>
-                    <br>
-                    <input id="avatar-url" type="text">
-                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-                </div></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-img remodal-is-initialized remodal-is-closed" data-remodal-id="weixin-modal" tabindex="-1">
-                <h3 contenteditable="true">请输入图片URL地址：</h3>
-                <br>
-                <input id="weixin-url" type="text">
-                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-            </div></div></body></html>
+                    {% include resumer_01-basic.html %}
+
+                    {% include resumer_02-profetional.html %}
+
+                    {% include resumer_03-education.html %}
+
+                    {% include resumer_04-experience.html %}
+
+                    {% include resumer_05-certification.html %}
+
+                    {% include resumer_06-personal_project.html %}
+                        
+                    </div><!-- .padd-box -->
+                <!-- END: PAGE CONTENT -->
+                </div><!-- .ace-paper-cont -->
+            </main><!-- .ace-paper -->
+        </div><!-- .ace-paper-stock -->
+    </div><!-- .ace-container -->
+</div><!-- #ace-content -->
